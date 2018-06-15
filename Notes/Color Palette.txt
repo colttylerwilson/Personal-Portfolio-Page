@@ -1,0 +1,3 @@
+Background: Powder #bgd8d2 Warm #df744a
+Color: Peach #fedcd2
+Highlight: #dcb239
