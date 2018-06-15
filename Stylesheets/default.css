@@ -78,7 +78,7 @@ li {
     align-items: center;
     text-align: center;
     background-color: #dcb239;
-    font-size: 5vmax;
+    font-size: 5vmin;
     grid-area: e;
     padding: 1vmax;
 }
@@ -161,7 +161,7 @@ footer {
 .contact-button {
     width: 10vmax;
     height: 10vmax;
-    border: .2vmin solid #df744a;
+    border: .3vmin solid #df744a;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -170,6 +170,10 @@ footer {
     background-color: #fedcd2;
     font-size: 100%;
     font-weight: bold;
+}
+
+#contact-buttons a {
+    text-decoration: none !important;
 }
 
 #subtext {
@@ -188,4 +192,53 @@ footer {
     #navbar a {
         padding: 10vmin 10vmin;
     }
+
+    #contact-buttons {
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        height: 100%;
+    }
+
+    #contacts-container {
+        background-color: #bfd8d2;
+        color: #df744a;
+        height: 90%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-button {
+        margin: 0 auto;
+    }
+
+    #projects-container {
+        background-color: #bfd8d2;
+        height: 90vh;
+        color: #df744a;
+        display: grid;
+        grid-template-areas: 
+        "e"
+        "a"
+        "b"
+        "c"
+        "d"
+        "f";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 1.5vmin;
+        width: auto;
+    }
+
+    #projects-container h2 {
+        font-size: 5vmax;
+    }
+
+    #projects h2 {
+        background-color: #bfd8d2;
+    } 
 }
