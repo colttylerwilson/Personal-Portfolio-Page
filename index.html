@@ -25,26 +25,34 @@
             <div id="projects-container">
                 <h2 id="projects-name">These are some of my projects...</h2>
                 <div class="project-tile" id="projects-tile1">
-                    <p>Functional JS</p>
-                    <p>Technical</p>
-                    <p>Documentation</p>
+                    <a href="https://codepen.io/colttylerwilson/full/XYgpQW/" target="_blank">
+                        <p>Functional JS</p>
+                        <p>Technical</p>
+                        <p>Documentation</p>
+                    </a>
                 </div>
                 <div class="project-tile" id="projects-tile2">
-                    <p>Unicorn</p>
-                    <p>Tribute</p>
-                    <p>Page</p>
+                    <a href="https://codepen.io/colttylerwilson/full/LrROGQ/" target="_blank">
+                        <p>Unicorn</p>
+                        <p>Tribute</p>
+                        <p>Page</p>
+                    </a>
                 </div>
                 <div class="project-tile" id="projects-tile3">
-                    <p>DevBox</p>
-                    <p>Product Landing</p>
-                    <p>Page</p>
+                    <a href="https://codepen.io/colttylerwilson/full/qKradp/" target="_blank">
+                        <p>DevBox</p>
+                        <p>Product Landing</p>
+                        <p>Page</p>
+                    </a>
                 </div>
                 <div class="project-tile" id="projects-tile4">
-                    <p>Zenergy</p>
-                    <p>Fitness</p>
-                    <p>Page</p>
+                    <a href="https://codepen.io/colttylerwilson/full/VdyPBR/" target="_blank">
+                        <p>Zenergy</p>
+                        <p>Fitness</p>
+                        <p>Page</p>
+                    </a>
                 </div>
-                <a href="https://www.google.com">
+                <a href="https://github.com/colttylerwilson" target="_blank">
                 <button>
                     Show all
                 </button></a>
@@ -61,11 +69,21 @@
                     <a href="https://github.com/colttylerwilson"><button class="contact-button">
                         GitHub
                     </button></a>
-                    <button class="contact-button" id="email-button">
-                        Email
+                    <button class="contact-button" id="email-button" onclick="getEmail()">
+                        <script>
+                            function getEmail() {
+                                alert("Email: Colt.T.Wilson@gmail.com");
+                            }
+                        </script>
+                        <div>Email</div>
                     </button>
-                    <button class="contact-button" id="phone-button">
-                        Call me
+                    <button class="contact-button" id="phone-button" onclick="getPhoneNumber()">
+                        <script>
+                            function getPhoneNumber() {
+                                alert("Phone: (951) 403-5459");
+                            }
+                        </script>
+                        <div>Call me</div>
                     </button>
                 </div>
             </div>

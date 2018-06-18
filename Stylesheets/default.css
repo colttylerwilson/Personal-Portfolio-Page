@@ -83,18 +83,20 @@ li {
     padding: 1vmax;
 }
 
-#projects-tile1, #projects-tile1 p{
+#projects-tile1, #projects-tile1 p, #projects-tile1 a{
     background-color: #dcb239;
+    color: #df744a;
 }
 
-#projects-tile2, #projects-tile2 p{
+#projects-tile2, #projects-tile2 p, #projects-tile2 a{
     color: #dcb239;
     background-color: #df744a;
 }
-#projects-tile3, #projects-tile3 p{
+#projects-tile3, #projects-tile3 p, #projects-tile3 a{
     background-color: #dcb239;
+    color: #df744a;
 }
-#projects-tile4, #projects-tile4 p{
+#projects-tile4, #projects-tile4 p, #projects-tile4 a{
     color: #dcb239;
     background-color: #df744a;
 }
@@ -169,7 +171,14 @@ footer {
     align-content: center;
     background-color: #fedcd2;
     font-size: 100%;
+    font-size: 4vmin;
     font-weight: bold;
+    transition: transform .5s;
+}
+
+.contact-button:hover {
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
 #contact-buttons a {
@@ -180,7 +189,59 @@ footer {
     background-color: #fedcd2;
 }
 
-@media only screen and (max-width: 425px) {
+#phone-button div{
+    background: #fedcd2;
+    transition: opacity 1s;
+}
+
+#phone-button:hover div{
+    opacity: 0;
+}
+
+#phone-button::after {
+    position: fixed;
+    content: 'Push Me';
+    transform: translate(0,150%);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    float: center;
+}
+
+#phone-button:hover::after {
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+#email-button div{
+    background: #fedcd2;
+    transition: opacity 1s;
+}
+
+#email-button:hover div{
+    opacity: 0;
+}
+
+#email-button::after {
+    position: fixed;
+    content: 'Push Me';
+    transform: translate(0,150%);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    float: center;
+}
+
+#email-button:hover::after {
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.project-tile a {
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 890px) {
     ul {
         flex-direction: column;
     }
@@ -214,6 +275,8 @@ footer {
 
     .contact-button {
         margin: 0 auto;
+        border-radius: 0;
+        width: 50vmin;
     }
 
     #projects-container {
@@ -241,4 +304,8 @@ footer {
     #projects h2 {
         background-color: #bfd8d2;
     } 
+
+    #contact {
+        margin: 15vh 0;
+    }
 }
